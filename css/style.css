@@ -1,0 +1,302 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #0E0C0D; /* колір тексту */
+    background: #ffffff; 
+}
+
+.container {
+  max-width: 1146px; /* максимальная ширина */
+  margin: auto; /*автовыравнивание посередине*/
+}
+
+.header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 12px;
+}
+
+.navbar {
+  display: flex; /* делаем гибкий блок */
+  align-items: center; /* выравниваем по горизонтали по центру */
+  justify-content: space-between; /* разбросать элементы по краям */
+  margin-bottom: 24px;
+}
+
+.navbar-panel {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-menu {
+  margin-right: auto;
+}
+
+.menu {
+  list-style: none; /* убираем маркеры в списке */
+  margin: 0;
+  padding: 0 0 0 21px;
+  padding-right: 21px;
+  display: flex;
+}
+
+/* для всех пунктов меню, кроме последнего */
+.menu-item:not(:last-child) {
+  margin-right: 14px;
+}
+
+.menu-link {
+  text-decoration: none; /* отключаем подчеркивание ссылок */
+  color: inherit; /* берем цвет текста от (body) */
+}
+
+/* Вход и регистрация \ Объявление */
+.button {
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.button-link {
+  color: inherit;
+}
+
+.button-primary {
+  background: #F7D22D; /* цвет кнопки */
+  border-radius: 5px; /* скругление углов кнопки */
+  color: #ffffff;
+  padding: 10px 30px;
+  margin-left: 10px;
+}
+
+.phone-block {
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button-cell {
+  background-color: #D1D1D1;
+  color: #696F7A;
+  border-radius: 28px;
+  padding: 10px 20px;
+}
+
+.phone {
+  color: #F7D22D;
+  font-weight: 700;
+  line-height: 32px;
+  font-size: 26px;
+  margin-left: 20px;
+}
+
+
+
+.page-content {
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  grid-column-gap: 10px;
+}
+
+.page-title {
+  color: #F7D22D;
+}
+
+.card-image {
+  border-radius: 10px;
+  size: 100%;
+  object-fit: cover;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap; /* Если не помещаются, то переносятся */
+}
+
+.card {
+  margin-bottom: 20px;
+  margin-right: 20px;
+  max-width: 253px;
+}
+
+.card-title {
+  font-size: 16px;
+  line-height: 19px;
+  color: #231F20;
+  margin-top: 12px;
+  margin-bottom: 5px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 253px;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+.card-price {
+  font-size: 16px;
+  line-height: 19px;
+  color: #0a143a;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.basket-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-text {
+  font-size: 14px;
+  line-height: 16px;
+  color: #c4c4c4;
+  margin-bottom: 4px;
+  margin-top: 0;
+  max-width: 253px;
+}
+
+/* Стиль сайдбару */
+.sidebar .page-title {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.service {
+  margin-bottom: 30px;
+}
+
+.service-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color:#0E0C0D;
+  margin-top: 7px;
+  margin-bottom: 5px;
+}
+
+.service-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color:#231F20;
+  max-width: 217px;
+}
+
+/* Стиль підвалу */
+.container-footer { 
+  margin: auto;
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.left-footer {
+  width: auto;
+  margin-right: 100px;
+  padding-left: 100px;
+  padding-top: 20px;
+}
+
+.right-footer {
+  max-width: 480px;
+}
+
+.footer-text {
+  display: flex;
+  font-size: 14px;
+  line-height: 16px;
+  color:#0E0C0D;
+  margin-bottom: 5px;
+  margin-right: 100px;
+  text-decoration: none;
+  text-align: justify; 
+}
+
+.footer-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 16px;
+  display: flex;
+}
+
+.footer-link {
+  color:#696F7A;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+
+.footer-link-btn {
+  display: inline-block; 
+  margin-left: auto;
+  width: 80px;
+  height: 30px;
+  border: solid;
+  border-color:#b6b6b6;
+  border-width: 1px;
+  border-radius: 10px;
+  margin-right: 20px;
+  text-align: center;
+}
+ 
+.write-email {
+  width: 480px;
+  height: 30px;
+  border: solid;
+  background:none;
+  border-color: #b6b6b6;
+  border-width: 1px;
+  border-radius: 10px;
+  margin-right: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer-phone {
+  color: #F7D22D;
+  font-weight: 700;
+  line-height: 32px;
+  font-size: 24px;
+}
+
+
+.footer-button-cell {
+  background-color: #D1D1D1;
+  color: #696F7A;
+  border-radius: 28px;
+  padding: 10px 20px;
+}
+
+.content {
+  max-width: 464px;
+  margin-right: 25px;
+}
+
+.content-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  color: #0a143a;
+}
+
+.menu-button {
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  display: none; /* Отключаю кнопку */
+}
+.close-menu {
+  display: none;
+}
